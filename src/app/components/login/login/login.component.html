@@ -1,0 +1,26 @@
+
+<app-header></app-header>
+
+<div class="login">
+    <h1 style="font-size: 26px; font-weight: 700; float: left;">Login</h1>
+    <form>
+        <div class="form-group">
+        <label class="label" for="exampleInputEmail1">Username or Email</label>
+        <input type="text" class="form-control"  class = "{{ isUsernameValid ? '' : 'is-invalid' }}" [(ngModel)]= "username"  name="username" aria-describedby="emailHelp" placeholder="Enter username or email">
+        </div>
+        <div class="form-group">
+        <label  class="label" for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" class = "{{ isPasswordValid ? '' : 'is-invalid' }}" [(ngModel)]= "password" name="password" placeholder="Password">
+        </div>
+        <div class="buttons" style="display: flex; flex-direction: row;">
+        <button type="submit" id="button" class="btn btn-danger" (click)= "submit()">LET ME IN!</button>
+         <div style="display: flex;align-items: center;">
+            <p style="margin-top: 25px;"> <a class="link" routerLink="/forgotPwd" href="#"> Forgot password? </a></p>
+         </div>
+        </div>
+        <p style="margin-top: 20px;">Don‘t have a profile?  <a class="link" routerLink="/register" href="#">Sign Up for free</a></p>
+    </form>
+
+</div>    
+
+<app-footer></app-footer>

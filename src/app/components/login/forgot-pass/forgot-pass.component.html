@@ -1,0 +1,23 @@
+
+<app-header></app-header>
+
+<div class="login">
+    <h1 style="font-size: 26px; font-weight: 700; float: left;">Password Reset</h1>
+    <form>
+        <div class="form-group">
+        <label class="label" for="exampleInputEmail1">Username or Email</label>
+        <input type="text" class="form-control"  class = "{{ isUsernameValid ? '' : 'is-invalid' }}" [(ngModel)]= "username"  name="username" aria-describedby="emailHelp" placeholder="Enter username or email">
+        </div>
+        <div class="form-group">
+        <label  class="label" for="exampleInputPassword1">New Password</label>
+        <input type="password" class="form-control" class = "{{ isPasswordValid ? '' : 'is-invalid' }}" [(ngModel)]= "password" name="password" placeholder="Password">
+        </div>
+        <div class="buttons" style="display: flex; flex-direction: row;">
+        <button type="submit" id="button" class="btn btn-danger" (click)= "submit()">SEND</button>
+        </div>
+        <p style="margin-top: 20px;">Password reset is done?  <a class="link" routerLink="/login" href="#">Login again</a></p>
+    </form>
+
+</div>    
+
+<app-footer></app-footer>

@@ -1,0 +1,50 @@
+
+<app-header></app-header>
+
+  <div class="container">
+      <h1 style="color: #fff;">Wishlist</h1>
+      <div class="head"><h2 style="font-size: 25;font-weight: 600;">Recommendations</h2></div>
+      <div class="container1">
+        <div class="image-grid">
+            <div class="image-card" *ngFor= "let image of arrayData">
+              <div class="div" [style.background-image]= "'url(' + image.imageUrl + ')'">
+                <div class="div2" >
+                  <div class="close">
+                    <button class="heart-button"  [ngClass]="{'active-like': image.liked}" (click)= "likeClicked(image)">
+                      <span class="heart-icon">&#10084;</span>
+                  </button>
+                  </div>
+                    <a class="link" href= "{{image.url}}" target="_blank">
+                    <i class="bi bi-play-circle larger-icon"></i>
+                    <div class="ribbon">
+                        <h2 style="margin: 0;">{{image.name}}</h2>
+                        <h5 style="margin: 0;" ><b>{{image.artist}}</b></h5>
+                    </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div style="width: 30%; height: auto;" >
+          <h1 style="margin-left: 10px;">Trending Tracks</h1>
+        <table mat-table [dataSource]= "dataSource" class="mat-elevation-z8" style="width: 100%;">
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element">
+              <a class="link" href="{{element.url}}" target="_blank">{{element.name}}</a>
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="listeners">
+            <th mat-header-cell *matHeaderCellDef>Listeners </th>
+            <td mat-cell *matCellDef="let element"> {{element.listeners}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef= "displayedColumns"></tr>
+          <tr mat-row *matRowDef= "let row; columns: displayedColumns;"></tr>
+        </table>
+        </div>
+      </div>
+  </div>
+
+<app-footer></app-footer>
+

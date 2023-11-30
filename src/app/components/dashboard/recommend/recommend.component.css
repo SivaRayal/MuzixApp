@@ -1,0 +1,114 @@
+.image-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-rows: 16rem;
+    gap: 10px;
+    height: auto;
+  }
+
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+
+.div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 95%;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.div:hover ,
+.div:focus {
+  background-size: 120%;
+  border: 1px solid black;
+  box-shadow: 0 4px 10px 0 grey, 0 6px 20px 0 black;
+}
+
+.ribbon{
+  width:100%;
+  color: white;
+  padding-left: 5px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.div2{
+    color: #fff;
+    height: 100%;
+    opacity: 1.5;
+    padding-left: 5px;
+    width: 100%;
+
+  }
+
+ .larger-icon{
+    font-size: 3rem;
+ }
+
+.div2 , .div2 a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.link{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div2 a:hover , .div2 :hover{
+    text-decoration: none !important;
+}
+
+table a{
+    color: black;
+    text-decoration: none;
+}
+
+table a:hover{
+    text-decoration: underline;
+}
+
+.close{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.head{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color:#b90000;
+}
+
+
+.heart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 30px;
+    color: #E5E4E2;
+  }
+
+    .heart-icon {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    }
+
+    .heart-button.clicked .heart-icon {
+    transform: scale(1.2);
+    }
+    .active-like{
+    color: red;
+    animation: colorPulse 0.5s infinite alternate;
+    }

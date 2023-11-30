@@ -1,0 +1,76 @@
+.login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .label{
+    margin: 20px 0;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  
+  .form-group {
+    margin: 9px 0; 
+  }
+  
+  .form-control {
+    width: 100%;
+    line-height: 1.9;
+    padding: 5px;
+  }
+  
+  #button {
+    margin-top: 18px ;
+    padding: 8px;
+    font-weight: 500;
+  }
+
+  form{
+    width: 60%;
+  }
+  .link{
+    color: #005399;
+    font-size: 15px;
+  }
+
+  .login a {
+    text-decoration: none;
+  }
+  
+  .login a:hover {
+    text-decoration: underline;
+  }
+
+.form-control:focus {
+    border-color: rgb(146, 142, 142);
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.14);
+}
+
+.is-invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25)
+}
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+
+.div2{
+  width: 40%; 
+  margin: 5%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+   align-items: center;
+   background-image: url("https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }

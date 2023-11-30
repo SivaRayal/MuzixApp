@@ -1,0 +1,31 @@
+header.navbar {
+    background-color: #000; 
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff; 
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    color: #fff; 
+    font-size: 24px; 
+  }
+
+  header{
+      background-color: #000;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 52px;
+      z-index: 1000;
+  }
+
+  .img{
+    border-radius: 50%;
+    height: 35px;
+  }
+
+  .nav-item{
+    margin: 0 5px
+  }

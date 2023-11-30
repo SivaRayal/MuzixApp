@@ -1,0 +1,197 @@
+<app-header></app-header>
+<div class="content">
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.last.fm/static/images/dashboard_header.f28f1fbea2f9.jpg" style="filter: brightness(0.5); height: 325px;
+      background-size: cover;" class="d-block w-100" alt="...">
+      <div class="carousel-caption text-start" >
+        <h1> Explore Top Music Powered by your Scrobbles.</h1>
+        <p class="opacity-75">We bring together your favourite music services and join up listening, watching and sharing to connect your musical world.   Below you can visualise, in real-time, the listening habits & trends of Last.fm's global community. Go Explore.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height: 325px; object-fit: cover;object-position: center 32%;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/653b86ce40bd896d47247bf5/BANNER_97803023662034.png" style="height: 325px;object-fit: none;background-color: lightsteelblue;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/653252b0c78a823274c32a75/BANNER_18186049298089.png" style="height: 325px;object-fit: none;background-color: skyblue;" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+<div class="container marketing">
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette" >
+    <div class="col-md-7" style="width: 50%;">
+      <h3 class="featurette-heading fw-normal lh-1">Embark on a sonic journey through diverse tracks.<br/> <br/><span class="text-body-secondary"> 🎵 #ExploreMusicGenres</span></h3>
+    </div>
+    <div class="col-md-5" id="grid1">
+          <div class="col-md-4" (click)= "getGenreTrack('rock')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/8010c540c59bbf2c86320cd188dbc4bf.jpg);" >
+            <div class="genre" style="background: rgba(208,32,16,1);" >
+              <h3>Rock</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('hip hop')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/55658d9d409dad55a4283474c6a5e402.jpg);" >
+            <div class="genre" style="background: rgba(69,69,69,1);"  >
+              <h3>Hip-hop</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('indie')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/d02dc6af35e832b2887fe0381a3739f9.jpg);" >
+            <div class="genre" style="background: rgba(93,101,84,1);" >
+              <h3>Indie</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('jazz')"  style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/55658d9d409dad55a4283474c6a5e402.jpg);">
+            <div class="genre" style="background: rgba(119,118,114,1);" >
+              <h3>Jazz</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('ambient')"  style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/03deb6e1a3efef19dac1f048c2929399.jpg);">
+            <div class="genre" style="background: rgba(69,69,69,1);" >
+              <h3>Ambient</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('british')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/94b0482efe69c8304b88cd250a9e313f.jpg);">
+            <div class="genre" style="background: rgba(70,126,145,1);" >
+              <h3>British</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('punk rock')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/0d8285ff98c041a9ab6aac9ed2e2dc57.jpg);">
+            <div class="genre" style="background: rgba(69,69,69,1);" >
+              <h3>Punk</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('80s')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/f1c57281a99016195337962288eab162.jpg);">
+            <div class="genre" style="background: rgba(70,40,30,1);" >
+              <h3>80's</h3>
+            </div>
+          </div>
+          <div class="col-md-4" (click)= "getGenreTrack('dance')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/169de4a6ec7245579ae3be1122114d9b.jpg);">
+            <div class="genre" style="background: rgba(0,11,14,1);" >
+              <h3>Dance</h3>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2" style="width: 50%;">
+      <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.❤️</span></h2>
+      <p class="lead">Music transcends boundaries, uniting hearts with its universal language. It's the soundtrack to our emotions, weaving the tapestry of our lives.</p>
+    </div>
+      <div class="col-md-5" id="grid1">
+        <div class="col-md-4" (click)= "getGenreTrack('acoustic')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/51a01c03f2f947771003f236c408683a.jpg);" >
+          <div class="genre" style="background: rgba(163,104,77,1);" >
+            <h3>Acoustic</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('rnb')"  style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/5396a6823cb3766b6cbc357461e04792.jpg);" >
+          <div class="genre" style="background: rgba(70,126,145,1);" >
+            <h3>Rnb</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('classical')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/fab82cfe8d43b5ae140788bf38a63683.jpg);" >
+          <div class="genre" style="background:rgba(93,101,84,1);" >
+            <h3>Classical</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('hardcore')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/d196c6a228991c6496c4abcdcfe4a018.jpg);">
+          <div class="genre" style="background: rgba(69,69,69,1);" >
+            <h3>Hardcore</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('country')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/e45657238d79562e7e9c2aab9ba6bb65.jpg);">
+          <div class="genre" style="background: rgba(79,83,60,1);"  >
+            <h3>Country</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('blues')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/4831cfc716ae4f18bcddc42b30699070.jpg);">
+          <div class="genre" style="background: rgba(98,113,79,1);"  >
+            <h3>Blues</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('alternative')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/edf2ca05619e83abcf85bf35b9487ebb.jpg);">
+          <div class="genre" style="background: rgba(113,99,102,1);"  >
+            <h3>Alternative</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('metal')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/arG/cf650c57f2bb4660c6df10f9c1f4eac7.jpg);">
+          <div class="genre" style="background:  rgba(170,99,89,1);"  >
+            <h3>Metal</h3>
+          </div>
+        </div>
+        <div class="col-md-4" (click)= "getGenreTrack('rap')" style="background-image: url(https://lastfm.freetls.fastly.net/i/u/770x0/ee45015e08d0a0c38d3f026c21522cbc.jpg#ee45015e08d0a0c38d3f026c21522cbc);">
+          <div class="genre" style="background: rgba(69,69,69,1);"  >
+            <h3>Rap</h3>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="tracks" *ngIf= "showView" id="table">
+    <hr class="featurette-divider">
+    <div class="tableheader">
+      <h2>{{genre}}</h2>
+      <button mat-raised-button color="primary" (click)= "close()">Close</button>
+    </div>
+    <table mat-table [dataSource]= "dataSource" class="mat-elevation-z8" style="width: 80%;">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element">
+          <a class="link" href="{{element.url}}" target="_blank">{{element.name}}</a>
+         </td>
+      </ng-container>
+      <ng-container matColumnDef="like">
+        <th mat-header-cell *matHeaderCellDef> Like </th>
+        <td mat-cell *matCellDef= "let element">
+          <button class="heart-button"  [ngClass]="{'active-like': element.liked}" (click)= "likeClicked(element)">
+            <span class="heart-icon">&#10084;</span>
+          </button>
+        </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="artist">
+        <th mat-header-cell *matHeaderCellDef> Artist </th>
+        <td mat-cell *matCellDef="let element"> {{element.artist.name}} </td>
+      </ng-container>
+    
+    
+      <tr mat-header-row *matHeaderRowDef= "displayedColumns"></tr>
+      <tr mat-row *matRowDef= "let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]= "[10, 25, 50]"></mat-paginator>
+  </div>  
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette" style="height: 420px; justify-content: space-evenly;">
+    <div class="col-md-7" class="card1" (click)= "getGenreTrack('ar rahman')" style="background:linear-gradient( rgba(0,65,26,0), rgba(0,65,26,1)), url(https://lastfm.freetls.fastly.net/i/u/arG/84c6a55dba4a4422bd8b797b0f1a8a8e.jpg); " >
+      <h3 class="artist">AR Rahman</h3>
+      <p style="font-size: medium;">AR Rahman, the musical maestro, has enchanted the world with his soul-stirring compositions, transcending borders and languages. His melodies create an unbreakable bond between the artist and active listeners.</p>
+    </div>
+    <div  class="col-md-5" class="card1" (click)= "getGenreTrack('taylor swift')" style="background: linear-gradient( rgba(70, 2, 2, 0), rgb(65, 0, 18)),  url(https://lastfm.freetls.fastly.net/i/u/arG/da80cf791df253b0554ee76d9c47a735.jpg); ">
+      <h3 class="artist"  >Taylor Swift</h3>
+      <p style="font-size: medium;">Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting, which is often inspired by her personal life, has received widespread media coverage.</p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
